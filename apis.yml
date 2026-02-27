@@ -1,0 +1,111 @@
+name: Linux
+description: A comprehensive collection of APIs and tools for interacting with the Linux operating system
+image: https://www.linux.org/images/logo.png
+url: https://www.linux.org
+created: '2024-01-15'
+modified: '2024-01-15'
+apis:
+- name: Linux Kernel API
+  description: Low-level system calls and kernel interfaces for interacting with the Linux kernel
+  image: https://www.kernel.org/theme/images/logos/tux.png
+  humanURL: https://www.kernel.org/doc/html/latest/
+  baseURL: https://api.kernel.org
+  tags:
+  - kernel
+  - system-calls
+  - operating-system
+  properties:
+  - type: documentation
+    url: https://www.kernel.org/doc/html/latest/userspace-api/index.html
+  - type: swagger
+    url: https://api.kernel.org/swagger.json
+  contact:
+  - FN: Linux Kernel Mailing List
+    email: linux-kernel@vger.kernel.org
+    url: https://lkml.org
+- name: systemd D-Bus API
+  description: System and service manager API for Linux using D-Bus protocol
+  humanURL: https://www.freedesktop.org/wiki/Software/systemd/
+  baseURL: unix:///run/dbus/system_bus_socket
+  tags:
+  - systemd
+  - dbus
+  - service-management
+  properties:
+  - type: documentation
+    url: https://www.freedesktop.org/software/systemd/man/
+  - type: api-reference
+    url: https://www.freedesktop.org/wiki/Software/systemd/dbus/
+- name: Procfs Virtual Filesystem
+  description: Process information pseudo-filesystem providing process and system information
+  humanURL: https://man7.org/linux/man-pages/man5/proc.5.html
+  baseURL: file:///proc
+  tags:
+  - filesystem
+  - processes
+  - monitoring
+  properties:
+  - type: documentation
+    url: https://www.kernel.org/doc/Documentation/filesystems/proc.txt
+- name: Sysfs Virtual Filesystem
+  description: Virtual filesystem for exporting kernel objects and device information
+  humanURL: https://man7.org/linux/man-pages/man5/sysfs.5.html
+  baseURL: file:///sys
+  tags:
+  - filesystem
+  - devices
+  - kernel
+  properties:
+  - type: documentation
+    url: https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt
+- name: Netlink Socket API
+  description: Socket-based interface for communication between kernel and userspace
+  humanURL: https://man7.org/linux/man-pages/man7/netlink.7.html
+  tags:
+  - networking
+  - ipc
+  - kernel
+  properties:
+  - type: documentation
+    url: https://www.kernel.org/doc/html/latest/userspace-api/netlink/index.html
+- name: Linux PAM API
+  description: Pluggable Authentication Modules for flexible authentication mechanisms
+  humanURL: http://www.linux-pam.org/
+  baseURL: https://api.linux-pam.org
+  tags:
+  - authentication
+  - security
+  - pam
+  properties:
+  - type: documentation
+    url: http://www.linux-pam.org/Linux-PAM-html/
+  - type: specification
+    url: http://www.linux-pam.org/Linux-PAM-html/mwg-expected-by-module.html
+- name: udev Device Manager API
+  description: Device manager for the Linux kernel handling device events
+  humanURL: https://www.kernel.org/pub/linux/utils/kernel/hotplug/udev/udev.html
+  tags:
+  - devices
+  - hardware
+  - hotplug
+  properties:
+  - type: documentation
+    url: https://www.freedesktop.org/software/systemd/man/udev.html
+common:
+- type: terms-of-service
+  url: https://www.linuxfoundation.org/terms
+- type: support
+  url: https://www.kernel.org/category/contact-us.html
+- type: getting-started
+  url: https://www.kernel.org/doc/html/latest/admin-guide/README.html
+maintainers:
+- FN: Linux Foundation
+  email: info@linuxfoundation.org
+  url: https://www.linuxfoundation.org
+tags:
+- operating-system
+- linux
+- kernel
+- open-source
+- unix
+include: []
