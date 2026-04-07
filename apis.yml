@@ -7,10 +7,10 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Operating System
-  - Linux
   - Kernel
+  - Linux
   - Open Source
+  - Operating System
   - Unix
 url: https://raw.githubusercontent.com/api-evangelist/linux/refs/heads/main/apis.yml
 created: '2024-01-15'
@@ -25,8 +25,8 @@ apis:
     humanURL: https://www.kernel.org/doc/html/latest/
     tags:
       - Kernel
-      - System Calls
       - Operating System
+      - System Calls
     properties:
       - type: Documentation
         url: https://www.kernel.org/doc/html/latest/userspace-api/index.html
