@@ -25,6 +25,13 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/linux.png
 tags:
   - Kernel
   - Linux
+  - Open-Source
+  - Operating System
+  - Unix
+  - Userspace API
+tags_raw:
+  - Kernel
+  - Linux
   - Open Source
   - Operating System
   - Unix
@@ -41,6 +48,10 @@ apis:
       including system calls, ioctls, eBPF, futex2, and the netlink protocol.
     humanURL: https://www.kernel.org/doc/html/latest/userspace-api/index.html
     tags:
+      - Kernel
+      - Userspace
+      - System-Calls
+    tags_raw:
       - Kernel
       - Userspace
       - System Calls
@@ -107,6 +118,10 @@ apis:
       information through a file-based interface.
     humanURL: https://man7.org/linux/man-pages/man5/proc.5.html
     tags:
+      - Filesystem
+      - Processes
+      - Monitoring
+    tags_raw:
       - Filesystem
       - Process
       - Monitoring
