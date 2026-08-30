@@ -61,7 +61,7 @@ apis:
     tags:
       - Kernel
       - Userspace
-      - System-Calls
+      - System Calls
     tags_raw:
       - Kernel
       - Userspace
