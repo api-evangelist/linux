@@ -36,7 +36,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/linux.png
 tags:
   - Kernel
   - Linux
-  - Open-Source
+  - Open Source
   - Operating System
   - Unix
   - Userspace API
@@ -47,6 +47,7 @@ tags_raw:
   - Operating System
   - Unix
   - Userspace API
+  - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/linux/refs/heads/main/apis.yml
 created: '2024-01-15'
 modified: '2026-04-28'
