@@ -50,7 +50,7 @@ tags_raw:
   - Open-Source
 url: https://raw.githubusercontent.com/api-evangelist/linux/refs/heads/main/apis.yml
 created: '2024-01-15'
-modified: '2026-04-28'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: linux:linux-kernel-userspace-api
@@ -194,6 +194,8 @@ apis:
       - type: Documentation
         url: https://www.freedesktop.org/software/systemd/man/udev.html
 common:
+  - url: https://www.kernel.org/feeds/all.atom.xml
+    type: BlogRSS
   - type: DomainSecurity
     url: security/linux-domain-security.yml
   - type: Website
