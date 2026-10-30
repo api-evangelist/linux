@@ -1,4 +1,4 @@
-# Linux (linux)
+# Linux
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,140 +66,109 @@
 
 Linux is an open-source Unix-like operating system kernel originally created by Linus Torvalds. This index catalogs the userspace and kernel programming interfaces exposed by Linux, including system calls, eBPF, ioctl, netlink, procfs, sysfs, GPIO, and security interfaces such as Seccomp, Landlock, and Linux Security Modules. It also covers ecosystem APIs for systemd and PAM.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/linux/refs/heads/main/apis.yml)
+**Areas:** Kernel · Linux · Open Source · Operating System · Unix · Userspace API
 
-## Scope
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+## Linux on APIs.io
 
-## Tags:
- - Kernel, Linux, Open Source, Operating System, Unix, Userspace API
+Everything profiled for Linux is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/linux/](https://apis.io/providers/linux/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-28
+### APIs (10)
 
-## APIs
+- [Linux Kernel Userspace API](https://apis.io/apis/linux/linux-kernel-userspace-api/) — The set of stable userspace-facing interfaces exposed by the Linux kernel, including system calls, ioctls, eBPF, futex2, and the netlink protocol.
+- [eBPF Userspace API](https://apis.io/apis/linux/ebpf-userspace-api/) — Extended Berkeley Packet Filter (eBPF) userspace API for loading and interacting with sandboxed programs running in the kernel.
+- [Netlink API](https://apis.io/apis/linux/netlink-api/) — Socket-based interface for communication between the kernel and userspace, used widely for networking, routing, and device configuration.
+- [Seccomp BPF](https://apis.io/apis/linux/seccomp-bpf/) — SECure COMPuting mode with BPF filters, used to restrict which system calls a process can make for sandboxing and hardening.
+- [Landlock](https://apis.io/apis/linux/landlock/) — Unprivileged access-control framework allowing processes to restrict themselves and their descendants from filesystem and network operations.
+- [procfs](https://apis.io/apis/linux/procfs/) — Virtual filesystem mounted at /proc that exposes process and kernel information through a file-based interface.
+- [sysfs](https://apis.io/apis/linux/sysfs/) — Virtual filesystem mounted at /sys that exports kernel object and device information to userspace.
+- [systemd D-Bus API](https://apis.io/apis/linux/systemd-dbus/) — The system and service manager API exposed by systemd over D-Bus for managing units, services, and the boot process.
+- [Linux PAM](https://apis.io/apis/linux/linux-pam/) — Pluggable Authentication Modules providing flexible, configurable authentication mechanisms for Linux applications.
+- [udev](https://apis.io/apis/linux/udev/) — Device manager for the Linux kernel handling device nodes and hotplug events under /dev.
 
-### Linux Kernel Userspace API
-The set of stable userspace-facing interfaces exposed by the Linux kernel, including system calls, ioctls, eBPF, futex2, and the netlink protocol.
+### Published properties
 
-**Human URL:** [https://www.kernel.org/doc/html/latest/userspace-api/index.html](https://www.kernel.org/doc/html/latest/userspace-api/index.html)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-#### Tags:
- - Kernel, Userspace, System Calls
+#### Security (1)
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/userspace-api/index.html)
-- [Reference](https://man7.org/linux/man-pages/man2/syscalls.2.html)
+Authentication, trust centre, and vulnerability disclosure.
 
-### eBPF Userspace API
-Extended Berkeley Packet Filter (eBPF) userspace API for loading and interacting with sandboxed programs running in the kernel.
+- [Linux Domain Security](https://apis.io/security/linux/linux-domain-security/)
 
-**Human URL:** [https://www.kernel.org/doc/html/latest/userspace-api/ebpf/index.html](https://www.kernel.org/doc/html/latest/userspace-api/ebpf/index.html)
+#### Plans and pricing (1)
 
-#### Tags:
- - eBPF, Kernel, Observability
+Published plans, tiers and prices.
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/userspace-api/ebpf/index.html)
+- [Linux Plans Pricing](https://apis.io/plans/linux/linux-plans-pricing/)
 
-### Netlink API
-Socket-based interface for communication between the kernel and userspace, used widely for networking, routing, and device configuration.
+#### Rate limits (1)
 
-**Human URL:** [https://man7.org/linux/man-pages/man7/netlink.7.html](https://man7.org/linux/man-pages/man7/netlink.7.html)
+Published request limits.
 
-#### Tags:
- - Networking, IPC, Kernel
+- [Linux Rate Limits](https://apis.io/rate-limits/linux/linux-rate-limits/)
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/userspace-api/netlink/index.html)
+#### FinOps (1)
 
-### Seccomp BPF
-SECure COMPuting mode with BPF filters, used to restrict which system calls a process can make for sandboxing and hardening.
+What the API costs to run, by operation.
 
-**Human URL:** [https://www.kernel.org/doc/html/latest/userspace-api/seccomp_filter.html](https://www.kernel.org/doc/html/latest/userspace-api/seccomp_filter.html)
+- [Linux Finops](https://apis.io/finops/linux/linux-finops/)
 
-#### Tags:
- - Security, Sandboxing, Syscalls
+## Where to find this API
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/userspace-api/seccomp_filter.html)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### Landlock
-Unprivileged access-control framework allowing processes to restrict themselves and their descendants from filesystem and network operations.
+- [Website](https://www.kernel.org/)
+- [Documentation](https://www.kernel.org/doc/html/latest/)
 
-**Human URL:** [https://www.kernel.org/doc/html/latest/userspace-api/landlock.html](https://www.kernel.org/doc/html/latest/userspace-api/landlock.html)
+## API Evangelist rating
 
-#### Tags:
- - Security, Access Control
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/userspace-api/landlock.html)
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 7.9 |
 
-### procfs
-Virtual filesystem mounted at /proc that exposes process and kernel information through a file-based interface.
+**Agent readiness 0.6** — human-only
 
-**Human URL:** [https://man7.org/linux/man-pages/man5/proc.5.html](https://man7.org/linux/man-pages/man5/proc.5.html)
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-#### Tags:
- - Filesystem, Process, Monitoring
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/filesystems/proc.html)
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/linux/](https://apis.io/providers/linux/).
 
-### sysfs
-Virtual filesystem mounted at /sys that exports kernel object and device information to userspace.
+## How this profile is made
 
-**Human URL:** [https://man7.org/linux/man-pages/man5/sysfs.5.html](https://man7.org/linux/man-pages/man5/sysfs.5.html)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-#### Tags:
- - Filesystem, Devices, Kernel
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Linux: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-#### Properties
-- [Documentation](https://www.kernel.org/doc/html/latest/filesystems/sysfs.html)
+## Open an issue
 
-### systemd D-Bus API
-The system and service manager API exposed by systemd over D-Bus for managing units, services, and the boot process.
-
-**Human URL:** [https://www.freedesktop.org/wiki/Software/systemd/dbus/](https://www.freedesktop.org/wiki/Software/systemd/dbus/)
-
-#### Tags:
- - systemd, D-Bus, Service Management
-
-#### Properties
-- [Documentation](https://www.freedesktop.org/software/systemd/man/)
-- [Reference](https://www.freedesktop.org/wiki/Software/systemd/dbus/)
-
-### Linux PAM
-Pluggable Authentication Modules providing flexible, configurable authentication mechanisms for Linux applications.
-
-**Human URL:** [http://www.linux-pam.org/](http://www.linux-pam.org/)
-
-#### Tags:
- - Authentication, Security
-
-#### Properties
-- [Documentation](http://www.linux-pam.org/Linux-PAM-html/)
-
-### udev
-Device manager for the Linux kernel handling device nodes and hotplug events under /dev.
-
-**Human URL:** [https://www.freedesktop.org/software/systemd/man/udev.html](https://www.freedesktop.org/software/systemd/man/udev.html)
-
-#### Tags:
- - Devices, Hardware, Hotplug
-
-#### Properties
-- [Documentation](https://www.freedesktop.org/software/systemd/man/udev.html)
-
-## Common Properties
-- [Kernel.org](https://www.kernel.org/)
-- [Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/)
-- [Linux man-pages](https://man7.org/linux/man-pages/)
-- [Linux Foundation](https://www.linuxfoundation.org/)
-
-## Maintainers
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/linux/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
